@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+}
