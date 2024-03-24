@@ -7,10 +7,10 @@ export default function handler(
 ) {
   console.log('m=handler stage=init');
 
-  const { qtd = 6 } = req.query;
+  const { qtd= 6 } = req.query;
   const generatedNumbers = Array.from({length: 60}, (v, k) => ++k);
   let responseNumbers = [];
-  for (let i = 0; i < qtd; i++) {
+  for (let i = 0; i < Number(qtd); i++) {
     const randomIndex = Math.floor(Math.random() * generatedNumbers.length);
       responseNumbers.push(generatedNumbers.splice(randomIndex, 1)[0]);
   };
