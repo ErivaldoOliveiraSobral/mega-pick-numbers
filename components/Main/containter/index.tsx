@@ -14,7 +14,7 @@ const MainContainer = ({ amount }: IMainContainer) => {
                 await fetch(`/api/numbers?qtd=${amount}`).then(resp => resp.json());
             setNumbers(_numbers);
         } catch (error) {
-            console.error(error);
+            console.error(JSON.stringify(error));
         };
     }
 
